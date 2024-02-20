@@ -1,12 +1,8 @@
-import "dotenv/config"
+import * as dotenv from "dotenv";
+dotenv.config();
 import { HardhatUserConfig } from "hardhat/config"
 import "@nomicfoundation/hardhat-toolbox"
 import "hardhat-gas-reporter"
-import { MY_VARIABLE } from './env';
-
-// Access environment variables
-const myVariable = process.env.MY_VARIABLE || MY_VARIABLE;
-
 
 
 
