@@ -2,6 +2,13 @@ import "dotenv/config"
 import { HardhatUserConfig } from "hardhat/config"
 import "@nomicfoundation/hardhat-toolbox"
 import "hardhat-gas-reporter"
+import { MY_VARIABLE } from './env';
+
+// Access environment variables
+const myVariable = process.env.MY_VARIABLE || MY_VARIABLE;
+
+
+
 
 const config: HardhatUserConfig = {
   solidity: { compilers: [{ version: "0.8.20" }, { version: "0.4.18" }] },
