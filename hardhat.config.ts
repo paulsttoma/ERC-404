@@ -4,6 +4,8 @@ import { HardhatUserConfig } from "hardhat/config"
 import "@nomicfoundation/hardhat-toolbox"
 import "hardhat-gas-reporter"
 
+console.log(process.env.SEPOLIA_PRIVATE_KEY_1);
+console.log(process.env.ALCHEMY_API_KEY);
 
 
 const config: HardhatUserConfig = {
